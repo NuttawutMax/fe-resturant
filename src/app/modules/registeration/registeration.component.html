@@ -1,0 +1,63 @@
+<form [formGroup]="formGroup">
+  <div class="container">
+    <div class="col-12">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Become a member today</mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="margin-top: 10px;">
+          <div class="row">
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="name" formControlName="name"/>
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Surname</mat-label>
+                <input matInput placeholder="surname" formControlName="surname"/>
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="email" formControlName="email"/>
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="password" type="password" formControlName="password"/>
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-8">
+              <mat-form-field appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input matInput type="number" placeholder="phone" formControlName="phone"/>
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="col-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Display name</mat-label>
+                <input matInput placeholder="Display name" formControlName="displayName"/>
+                <mat-hint>*Leave this blank will resulting in displaying your first name</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12">
+              <button mat-flat-button color="primary" (click)="register()">Register</button>
+              <button mat-button style="margin-left: 1rem;">Cancel</button>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</form>

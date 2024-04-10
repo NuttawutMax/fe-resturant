@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>Please login before make an order</p>
+        </div>
+        <div class="col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="email" />
+                <mat-hint></mat-hint>
+            </mat-form-field>
+
+        </div>
+        <div class="col-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="password" />
+                <mat-hint></mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="col-12">
+            <button mat-flat-button color="primary" class="mr-2">Login</button>
+            <button mat-flat-button color="primary" (click)="registerPage()">Register</button>
+        </div>
+    </div>
+</div>
